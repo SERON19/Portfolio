@@ -1,0 +1,123 @@
+*{
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+box-sizing: border-box;
+}
+
+body{
+    background-color: #080808;
+    color: white;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/Futuristic\ programmer.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10% ;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 200px;
+}
+nav ul li{
+    display:inline-block ;
+    list-style: none;
+    margin: 10px 30px;
+
+
+}
+nav ul li a{
+    color: #fff;
+    text-decoration:none ;
+    font-size: 20px;
+    position: relative;
+    
+}
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.headercontainer{
+    margin-top: 10px;
+    font-size: 40px;
+
+}
+.headercontainer h1{
+    margin-top: 30px;
+    font-size: 60px;
+
+}
+.headercontainer h1 span{
+    color: #ff004f;
+}
+#about{
+    padding: 100px;
+    color: #ababab;
+}
+.subtitle{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.tables{
+    display: flex;
+    margin:20px 0 40px;
+
+}
+.tablelink{
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tablelink::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+
+}
+.tablelink.active-link::after{
+    width: 50px;
+}
+.tab-contents ul li{
+    list-style: none;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+#portfolio{
+    padding: 30px 0;
+}
+.portfolio-item{
+font-size: xx-small;
+display: flexbox;
+
+}
