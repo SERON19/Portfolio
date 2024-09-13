@@ -6,17 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/482882f584.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
         <div class="container">
-            <nav>
-                <img src="images/Free Vector _ Laptop with program code isometric icon, software development and programming applications dark neon.jpeg" class="logo"/>
+            <nav class="navbar">
+                <img src="images/IMG-20240901-WA0018.jpg" class="logo"/>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
 
                     
                 </ul>
@@ -33,13 +34,9 @@
                 <div  class="container">
                     <div class="row">
                         <div class="col1">
-                            <h1 class="subtitle">About Me</h1>
-                            <p>I have accumulated extensive experience in programming languages and development tools,technical support and ICT
-                                project management.Proficient in network and system administration,coupled with website management and
-                                troubleshooting skills have equip me with robust foundation to excel.I have proven track record of installing,configuring
-                                and maintaining IT infrastructure along with providing field ICT specialist services.My ability to adapt to new technologies
-                                and provide innovative solutions aligns well with the dynamic nature of IT industry.</p>
-
+                            <h1 class="subtitle"><a href="#about">About Me</a></h1>
+                            <p>I am a Software Engineer with passion for learning new things and using My skills to solve,improve  and reengineer business processes.</p>
+                            <a href="./images/Seron Resume.pdf" download class="btn1">Download CV</a>
                                 <div class="tables">
                                     <p class="tablelink active-link" onclick="opentab('skills')">Skills</p>
                                     <p class="tablelink" onclick="opentab('experience')">Experience</p>
@@ -82,33 +79,74 @@
             <!-- My Portfolio -->
              <div id="portfolio">
                 <div class="container">
-                    <h1 class="subtitle">My Portfolio</h1>
-                        <div class="portfolio-item">
-                            <h3>My Portfolio</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, esse. Libero ab ullam illum asperiores, sequi nulla exercitationem nihil error soluta harum! Distinctio, suscipit porro consectetur voluptatibus quisquam similique est!</p>
-                            <a href="#">Learn more</a>
+                    <h1 class="subtitle"><a href="#portfolio">My Portfolio</a></h1>
+                    <section class="projects">
+                            <div class="portfolio-item">
+                                <h3>My Portfolio</h3>
+                                <p>My portfolio site provides an overview of my skills and experience in ICT and web development.The site serves as a platform to showcase my work, highlight my expertise, and provide a glimpse into the innovative solutions I bring to the ICT field.</p>
+                                <a href="#"><button>Learn more</button></a>
 
-                        </div>
+                            </div>
 
-                        <div class="portfolio-item">
-                            <h3>Telemedicine App</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, esse. Libero ab ullam illum asperiores, sequi nulla exercitationem nihil error soluta harum! Distinctio, suscipit porro consectetur voluptatibus quisquam similique est!</p>
-                            <a href="#">Learn more</a>
+                            <div class="portfolio-item">
+                                <h3>Telemedicine App</h3>
+                                <p>Telemedicine website connects patients with healthcare providers through secure, real-time video consultations. The platform allows users to schedule appointments, access medical advice, <br>receive prescriptions, and manage their health from the comfort of their home. With features like easy-to-use interfaces, secure data handling, and integration with existing healthcare systems, we aim to make healthcare more accessible, efficient, and personalized. Our goal is to bridge the gap between patients and healthcare professionals, ensuring that quality care is just a click away, regardless of location.</p>
+                                <a href="#"><button>Learn more</button></a>
 
-                        </div>
+                            </div>
 
-                        <div class="portfolio-item">
-                            <h3>Ecommerce </h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, esse. Libero ab ullam illum asperiores, sequi nulla exercitationem nihil error soluta harum! Distinctio, suscipit porro consectetur voluptatibus quisquam similique est!</p>
-                            <a href="#">Learn more</a>
+                            <div class="portfolio-item">
+                                <h3>Ecommerce </h3>
+                                <p>ECommerce website offers a seamless shopping experience by connecting customers with a wide range of products across various categories. Designed with user-friendly navigation,<br> secure payment gateways, and personalized recommendations, the platform ensures that customers can easily browse, select, and purchase items from the comfort of their home. With features such as detailed product descriptions, customer reviews, and fast delivery options, we aim to provide a convenient, reliable, and enjoyable shopping experience for everyone, while helping businesses expand their online presence and reach more customers.</p>
+                                <a href="#"><button>Learn more</button></a>
 
-                        </div>
-
-                    
+                            </div>
+                    </section>
+                                           
 
                 </div>
 
              </div>
+
+             <!-- Contants -->
+              <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h2 class="sub-title"><a href="#contact">Contact Me</a></h2>
+                            
+                            <div class="social-icons">
+                                <i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i>
+                                <i class="fa-brands fa-x-twitter fa-xl"></i>
+                                <i class="fa-brands fa-linkedin-in fa-xl"></i>
+                                <p><i class="fa-solid fa-envelope fa-xl"></i>seroncj@gmail.com   </p> 
+                                <P><i class="fa-solid fa-phone fa-xl"></i>+254713088520</P>                                                      
+                                
+                            </div>
+                        </div>
+
+                        <div class="contact-right">
+                            <form action=" https://formsubmit.co/el/hobuwe" method="POST" >
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="email" placeholder="johndoe@gmail.com" required>
+                                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn">Send</button>
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+              </div>
+              <div class="copyright">
+                <p>@2024</p><hr>
+              </div>
+
+
+
+
     </div>
     <script src="index.js"></script>
 
